@@ -9,8 +9,11 @@ export default function Discuss() {
           Talk to an Arure Expert Today!
         </h2>
         <div>
-          <a href="/quotation"  className="text-white text-xl font-semibold rounded-sm border border-[#46c6ed] bg-[#46c6ed] px-8 py-2">
-          Get Started
+          <a
+            href="/quotation"
+            className="text-white text-xl font-semibold rounded-sm border border-[#46c6ed] bg-[#46c6ed] px-8 py-2"
+          >
+            Get Started
           </a>
         </div>
       </div>

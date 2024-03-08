@@ -36,7 +36,6 @@ export default function Header(props) {
             <div>
               <a
                 href="/quotation"
-                
                 className="text-white text-base rounded-sm border border-[#1d2f5d] bg-[#1d2f5d] px-5 py-2 "
               >
                 Get Started

@@ -30,22 +30,34 @@ export default function Footer() {
             <h1 className="font-semibold text-xl">Social</h1>
             <ul className="text-white text-opacity-60 [&>li]:flex [&>li]:gap-x-3 [&>li]:items-center">
               <li>
-                <a className="flex items-center gap-x-3" href="https://www.facebook.com/aruretech">
+                <a
+                  className="flex items-center gap-x-3"
+                  href="https://www.facebook.com/aruretech"
+                >
                   <BsFacebook /> Facebook
                 </a>
               </li>
               <li>
-                <a className="flex items-center gap-x-3" href="https://www.linkedin.com/company/14543180">
+                <a
+                  className="flex items-center gap-x-3"
+                  href="https://www.linkedin.com/company/14543180"
+                >
                   <BsLinkedin /> Linkedin
                 </a>
               </li>
               <li>
-                <a className="flex items-center gap-x-3" href="https://twitter.com/Aruretech">
+                <a
+                  className="flex items-center gap-x-3"
+                  href="https://twitter.com/Aruretech"
+                >
                   <BsTwitter /> Twitter
                 </a>
               </li>
               <li>
-                <a className="flex items-center gap-x-3" href="https://www.instagram.com/arure.tech/">
+                <a
+                  className="flex items-center gap-x-3"
+                  href="https://www.instagram.com/arure.tech/"
+                >
                   <BsInstagram /> Instagram
                 </a>
               </li>
@@ -59,11 +71,10 @@ export default function Footer() {
               development.
             </p>
             <p>
-            Arure LLC, 659, 447 Broadway, 2nd Floor, New York, NY, New York, US, 10013;
+              Arure LLC, 659, 447 Broadway, 2nd Floor, New York, NY, New York,
+              US, 10013;
             </p>
-            <a href="tel:+18584634405">
-            Phone # (858) 463-4405
-            </a>
+            <a href="tel:+18584634405">Phone # (858) 463-4405</a>
           </div>
         </div>
       </div>

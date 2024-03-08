@@ -11,7 +11,10 @@ export default function Work(props) {
             Want To Learn Everything We Do?
           </h1>
         </div>
-        <div data-aos="fade-up" className="grid md:grid-cols-3 gap-x-10 gap-y-10 mt-5">
+        <div
+          data-aos="fade-up"
+          className="grid md:grid-cols-3 gap-x-10 gap-y-10 mt-5"
+        >
           <WorkCard
             img="images/work/1.svg"
             title="Kick-Off Meeting"

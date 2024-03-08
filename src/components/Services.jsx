@@ -9,7 +9,10 @@ export default function Services(props) {
           What We Offer
         </h1>
       </div>
-      <div data-aos="zoom-in-down" className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-6 [&>div]:text-center [&>div]:cursor-pointer">
+      <div
+        data-aos="zoom-in-down"
+        className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-6 [&>div]:text-center [&>div]:cursor-pointer"
+      >
         <div className=" space-y-4 p-5 shadow-2xl rounded-xl bg-white hover:scale-110 duration-300 ">
           <div>
             <img

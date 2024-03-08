@@ -35,13 +35,13 @@ export default function Quotation(props) {
       },
     };
     try {
-      setLoading(true); 
+      setLoading(true);
       let response = await axios.post(
         "https://backend.arure.solutions/" + url,
         postData,
         config
       );
-      setLoading(false); 
+      setLoading(false);
       return response;
     } catch (error) {
       setLoading(false);
@@ -63,7 +63,7 @@ export default function Quotation(props) {
   const onChange = (e) => {
     const { name, value, type, checked } = e.target;
 
-    if (type === 'checkbox') {
+    if (type === "checkbox") {
       const updatedExtraFeatures = [...quotation.extraFeatures];
 
       if (checked) {
@@ -89,7 +89,7 @@ export default function Quotation(props) {
 
   const sendMail = async (e) => {
     e.preventDefault();
-     
+
     if (quotation.previousDesign === "") {
       info_toaster("Please Select Any Option");
     } else if (quotation.pages === "") {
@@ -139,12 +139,14 @@ export default function Quotation(props) {
   return (
     <>
       <ToastContainer />
-      <Header/>
+      <Header />
       <div ref={props.refProp} className="py-20 md:py-40 bg-[#e9ecef]">
         <div className="w-1/2 m-auto mb-10 text-center">
           <h4 className="text-[#017e84]">Tell Us About Your Web</h4>
           <h2 className="text-4xl font-semibold mt-3">Want A Quotation?</h2>
-          <p className="mt-3">This is exclusive of all content, logo, and branding vision.</p>
+          <p className="mt-3">
+            This is exclusive of all content, logo, and branding vision.
+          </p>
         </div>
         <div className="w-3/5 m-auto">
           <form action="">
@@ -160,7 +162,7 @@ export default function Quotation(props) {
                 className="h-full w-full border-0 border-transparent rounded-md shadow-sm bg-white py-3 px-2 text-gray-500 focus:outline-none focus:ring-0 focus:border-transparent sm:text-base"
               >
                 <option value="Yes, I only need help for development">
-                Yes, I only need help for development*
+                  Yes, I only need help for development*
                 </option>
                 <option value="Yes, I only need help for integration">
                   Yes, I only need help for integration.
@@ -285,7 +287,7 @@ export default function Quotation(props) {
                     className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
                 </div>
-                
+
                 <div className="bg-white shadow-sm rounded-md px-6 flex justify-between items-center">
                   <label className="text-lg font-medium leading-6 text-gray-700 my-3">
                     Forum
@@ -312,12 +314,14 @@ export default function Quotation(props) {
                 </div>
                 <div className="bg-white shadow-sm rounded-md px-6 flex justify-between items-center">
                   <label className="text-lg font-medium leading-6 text-gray-700 my-3">
-                  Payment Gateway Integration
+                    Payment Gateway Integration
                   </label>
                   <input
                     type="checkbox"
                     name="Payment Gateway Integration"
-                    checked={quotation.extraFeatures.includes("Payment Gateway Integration")}
+                    checked={quotation.extraFeatures.includes(
+                      "Payment Gateway Integration"
+                    )}
                     onChange={onChange}
                     className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
@@ -419,7 +423,7 @@ export default function Quotation(props) {
           </div>
         )}
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

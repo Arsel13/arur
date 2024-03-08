@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Team(props) {
   return (
-    // <div className="relative py-16 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[35%] after:w-full md:after:bg-[#46c6ed] after:z-10 ">
     <div ref={props.refProp} className="relative py-16">
       <div className="w-4/5 md:w-3/4 m-auto relative z-20">
         <div className="">
